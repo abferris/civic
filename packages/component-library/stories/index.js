@@ -70,6 +70,7 @@ import "../assets/global.styles.css";
 // Welcome to Storybook
 storiesOf("Welcome", module)
   .addDecorator(checkA11y)
+  .addParameters({ options: { showPanel: false } })
   .add("Introduction", () => <Introduction />)
   .add("The CIVIC Brand", () => <TheBrandStyle />)
   .add("The CIVIC Platform", () => <ThePlatformStyle />);
@@ -77,6 +78,7 @@ storiesOf("Welcome", module)
 // Branding
 storiesOf("Branding", module)
   .addDecorator(checkA11y)
+  .addParameters({ options: { showPanel: false } })
   .add("Logos", () => <LogosStyle />)
   .add("Color Theme", () => <ColorThemeStyle />)
   .add("Typography", () => (
@@ -91,6 +93,7 @@ storiesOf("Branding", module)
 // UX Style Guide
 storiesOf("UX Style Guide", module)
   .addDecorator(checkA11y)
+  .addParameters({ options: { showPanel: false } })
   .add("Accessibility", () => <AccessibilityGuidelinesStyle />)
   .add("Cards", () => <CardsStyle />)
   .add("Data Visualization", () => <DataVisualizationStyle />)
@@ -104,6 +107,7 @@ storiesOf("UX Style Guide", module)
 // common UI components
 storiesOf("UI Components", module)
   .addDecorator(checkA11y)
+  .addParameters({ options: { showPanel: false } })
   .add("UI Components Style Guide", () => <UIComponentsStyle />);
 buttonStory();
 dropdownStory();
@@ -112,6 +116,7 @@ sliderStory();
 // charts
 storiesOf("Charts", module)
   .addDecorator(checkA11y)
+  .addParameters({ options: { showPanel: false } })
   .add("Charts Style Guide", () => <ChartsStyle />);
 BarChartStory();
 dataTable();
@@ -125,6 +130,7 @@ stackedAreaChart();
 // maps
 storiesOf("Maps", module)
   .addDecorator(checkA11y)
+  .addParameters({ options: { showPanel: false } })
   .add("Maps Style Guide", () => <MapsStyle />);
 baseMapStory();
 boundaryMapStory();
@@ -140,6 +146,7 @@ screenGridMapStory();
 // Civic platform components and page layout
 storiesOf("CIVIC Platform Components", module)
   .addDecorator(checkA11y)
+  .addParameters({ options: { showPanel: false } })
   .add("Platform Components Style Guide", () => <CivicPlatformStyle />);
 civicCardStackStory();
 civicSandboxDashboardStory();

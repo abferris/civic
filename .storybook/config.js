@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 
-import { configure } from "@storybook/react";
+import { addParameters, configure } from "@storybook/react";
 import "../packages/component-library/assets/global.styles.css";
 import themeCIVIC from "./themeCIVIC";
 
